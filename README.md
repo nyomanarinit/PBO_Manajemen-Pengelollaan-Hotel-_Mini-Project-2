@@ -247,7 +247,83 @@ Berikut adalah penjelasan mengenai kelas `Main` dan penerapan konsep-konsep pemr
 
 Kelas `Main` adalah tempat di mana program dijalankan dan menghubungkan berbagai kelas dalam sistem. Melalui penggunaan objek dan metode, kelas ini memungkinkan pengguna untuk berinteraksi dengan sistem manajemen kamar hotel. Dengan menerapkan struktur menu, pengulangan, dan percabangan, kelas ini memberikan antarmuka yang ramah pengguna dan memudahkan pengelolaan data kamar. 
 
+## Penjelasan Alur Program
+1. Tampilan Awal Program
+   
+   ![image](https://github.com/user-attachments/assets/ad2eafec-34d7-46ef-bb2e-66b784898eb0)
+    
+    Pada awal program terdapat ucapan salam dan langsung ditampilkan bagian menu dari program hotel ini. ada 6 pilihan menu yaitu;
+    1. Tambah Kamar
+    2. Hapus Kamar
+    3. Update Kamar
+    4. Lihat Semua Kamar
+    5. Cari Kamar
+    6. Keluar
+   staf dapat melakukan pilihan dengan menginputkan angka 1-6 yang tertera di menu.
 
+2. Tampilan Menu Lihat Semua Kamar
+
+   ![image](https://github.com/user-attachments/assets/a9343ef0-18b0-40f4-ac5d-de0fe460c13c)
+
+    Pada tampilan Lihat Semua kamar maka staf di sini akan mendapatkan print output list kamar mulai dari nomer kamar, harga, tipe dan ketersediaan        kamar.
+
+3. Tampilan Menu Tambah Kamar
+
+   ![image](https://github.com/user-attachments/assets/42615477-41be-4ea9-be4e-bb4c966ac2ac)
+
+
+   ![image](https://github.com/user-attachments/assets/a59f992b-9789-4d5a-9754-8e5c70bc4816)
+
+   Pada tampilan menu tambahkamar di sini staf dapat menambahkan kamar dengan mengisi data yang sudah tersedia yaitu;
+   Masukkan nomor kamar (0 untuk kembali): 106
+   Masukkan harga kamar: 200000
+   Tipe Kamar (1. Standard, 2. Deluxe, 3. Suite): 1
+   Status tersedia (true/false): true
+
+   maka akan mendapatkan hasil print output:
+   Kamar berhasil ditambahkan. Nomor: 106, Tipe: Standard, Harga: 200000,00, Tersedia: Ya
+   
+4. Tampilan Menu Update Kamar
+    *tampilan sebelum di update data*
+   
+   ![image](https://github.com/user-attachments/assets/2bc1e756-ae2a-4c1f-8a7a-f8f98414a031)
+
+
+   *tampilan proses update data*
+   
+   ![image](https://github.com/user-attachments/assets/925a6c69-5945-49bf-aae8-d5631447aa16)
+
+
+    *tampilan sesudah di update data*
+   
+   ![image](https://github.com/user-attachments/assets/def658d6-2639-4fc1-a040-7b30bc86e7c0)
+
+
+    Pada tampilan ini staf dapat melakukan update data sewaktu waktu kapan kamar tersebut dapat berubah, staf akan diminta mengisi pertanyaan yaitu;
+    Masukkan nomor kamar yang akan diperbarui (0 untuk kembali): 105
+    Masukkan tipe kamar baru (Standard/Deluxe/Suite): Suite
+    Masukkan harga baru: 400000
+    Status tersedia (true/false): false
+
+    tampilan print output setelah berhasil update
+    Kamar berhasil diperbarui.
+
+
+5. Tampilan Menu Cari Kamar
+
+   ![image](https://github.com/user-attachments/assets/1aa48f87-ed89-43c2-8538-d6594fbebdfe)
+
+   adanya fitur tambahan pencarian di sini dapat membantu staf untuk mrlakukan pencarian ketersediaan kamar dengan memasukan nomer kamar saja, sesuai     pada contoh gambar diatas.
+
+6. Tampilan Akhir Program
+
+   ![image](https://github.com/user-attachments/assets/421ffccb-eec6-4e4d-b4af-e12177bc727a)
+
+   Pada tampilan akhir program di sini akan memeberhentikan program. dimana jika staf kamar hotel sudah seleasai melakukan aktivitas maka staf dapat memberhentikan dan keluar program dengan memilih opsi 6.Keluar.
+
+   
+
+   
 
 
 
