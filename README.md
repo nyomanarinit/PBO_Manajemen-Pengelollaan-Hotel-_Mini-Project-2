@@ -7,7 +7,7 @@
 Studi kasus ini berfokus pada pengembangan sistem manajemen kamar hotel yang bertujuan untuk mempermudah pengelolaan informasi kamar bagi staf hotel. Sistem ini akan memungkinkan pengguna untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada data kamar, serta mengelola status ketersediaan kamar secara efisien. Dengan menggunakan pemrograman berorientasi objek, sistem ini akan menerapkan konsep inheritance dan encapsulation untuk menciptakan struktur yang jelas dan terorganisir. Diharapkan, sistem ini dapat meningkatkan efisiensi operasional, mengurangi kesalahan dalam pemesanan, dan pada akhirnya meningkatkan pengalaman tamu di hotel.
 
 ## Source Code dan Penjelasan 
-### class Room.java pakage model
+### class Room.java packages model
 package model;
 public abstract class Room {
     private int roomNumber;
@@ -46,7 +46,7 @@ Metode getter yang disediakan (getRoomNumber(), getPrice(), dan isAvailable()) m
 Method Abstrak:
 
 Metode getRoomType() adalah metode abstrak yang harus diimplementasikan oleh subclass. Ini memberikan fleksibilitas untuk menentukan jenis kamar yang berbeda pada masing-masing subclass, sekaligus memastikan bahwa setiap kamar harus memiliki cara untuk mengembalikan tipe kamar mereka.
-### class StandardRoom.java pakage model
+### class StandardRoom.java packages model
 package model;
 public class StandardRoom extends Room {
     public StandardRoom(int roomNumber, double price, boolean available) {
@@ -59,7 +59,7 @@ public class StandardRoom extends Room {
     }
 }
 
-### class DeluxeRoom.java pakage model
+### class DeluxeRoom.java packages model
 package model;
 public class DeluxeRoom extends Room {
     public DeluxeRoom(int roomNumber, double price, boolean available) {
@@ -72,7 +72,7 @@ public class DeluxeRoom extends Room {
     }
 }
 
-### class SuiteRoom.java pakage model
+### class SuiteRoom.java packages model
 package model;
 public class SuiteRoom extends Room {
     public SuiteRoom(int roomNumber, double price, boolean available) {
@@ -99,7 +99,7 @@ Menyediakan implementasi untuk getRoomType() yang mengembalikan nilai "Suite".
 
 Ketiga kelas ini bekerja sama dalam sistem manajemen kamar hotel untuk menyediakan berbagai pilihan kamar sesuai dengan kebutuhan dan anggaran tamu. Dengan menggunakan pemrograman berorientasi objek, mereka dapat dengan mudah dikelola dan ditampilkan dalam aplikasi, memberikan fleksibilitas dalam menangani berbagai jenis kamar dan mempermudah pemeliharaan kode. Metode yang diwariskan dari kelas Room memastikan bahwa semua tipe kamar memiliki struktur dasar yang konsisten, sementara metode spesifik di setiap subkelas memungkinkan penyesuaian untuk kebutuhan masing-masing tipe kamar.
 
-### class RoomManagement.java pakage managamenet
+### class RoomManagement.java packages managamenet
 package management;
 
 import model.Room;
@@ -197,7 +197,7 @@ Berikut adalah penjelasan mengenai kelas `RoomManagement` dan penerapan konsep-k
 
 Kelas `RoomManagement` bertindak sebagai pengelola utama untuk semua kamar hotel. Dengan menggunakan prinsip-prinsip pemrograman berorientasi objek seperti enkapsulasi, pewarisan, dan implementasi metode CRUD, kelas ini menyediakan struktur yang rapi dan mudah digunakan untuk mengelola data kamar. Hal ini membantu menjaga kode tetap terorganisir dan memungkinkan pengembangan lebih lanjut di masa depan.
 
-### Penjelasan Kelas RoomManagementInterface.java pakage Management 
+### Penjelasan Kelas RoomManagementInterface.java packages Management 
 package management;
 
 import model.Room;
@@ -284,6 +284,7 @@ Kelas `Main` adalah tempat di mana program dijalankan dan menghubungkan berbagai
    Kamar berhasil ditambahkan. Nomor: 106, Tipe: Standard, Harga: 200000,00, Tersedia: Ya
    
 4. Tampilan Menu Update Kamar
+5. 
     *tampilan sebelum di update data*
    
    ![image](https://github.com/user-attachments/assets/2bc1e756-ae2a-4c1f-8a7a-f8f98414a031)
@@ -309,13 +310,13 @@ Kelas `Main` adalah tempat di mana program dijalankan dan menghubungkan berbagai
     Kamar berhasil diperbarui.
 
 
-5. Tampilan Menu Cari Kamar
+6. Tampilan Menu Cari Kamar
 
    ![image](https://github.com/user-attachments/assets/1aa48f87-ed89-43c2-8538-d6594fbebdfe)
 
    adanya fitur tambahan pencarian di sini dapat membantu staf untuk mrlakukan pencarian ketersediaan kamar dengan memasukan nomer kamar saja, sesuai     pada contoh gambar diatas.
 
-6. Tampilan Akhir Program
+7. Tampilan Akhir Program
 
    ![image](https://github.com/user-attachments/assets/421ffccb-eec6-4e4d-b4af-e12177bc727a)
 
