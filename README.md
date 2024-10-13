@@ -46,6 +46,7 @@ Metode getter yang disediakan (getRoomNumber(), getPrice(), dan isAvailable()) m
 Method Abstrak:
 
 Metode getRoomType() adalah metode abstrak yang harus diimplementasikan oleh subclass. Ini memberikan fleksibilitas untuk menentukan jenis kamar yang berbeda pada masing-masing subclass, sekaligus memastikan bahwa setiap kamar harus memiliki cara untuk mengembalikan tipe kamar mereka.
+
 ### class StandardRoom.java packages model
 package model;
 public class StandardRoom extends Room {
@@ -211,8 +212,8 @@ public interface RoomManagementInterface {
     List<Room> getAllRooms();
 }
 
-Kelas `RoomInterface` didefinisikan sebagai sebuah interface yang berfungsi untuk mendefinisikan kontrak atau perilaku yang harus diimplementasikan oleh kelas-kelas yang berhubungan dengan pengelolaan kamar. Interface ini tidak dapat diinstansiasi, tetapi bisa diimplementasikan oleh kelas lain.
-
+Interface (RoomManagementInterface) hanya mendefinisikan signature atau nama metode tanpa menyediakan implementasinya.
+Ini semacam kontrak yang mengatakan bahwa kelas yang mengimplementasikan interface tersebut harus menyediakan logika untuk setiap metode yang didefinisikan. 
 Terdapat beberapa metode yang dideklarasikan dalam interface ini, yang mencakup:
   - tambahKamar(Room room): Metode untuk menambahkan kamar baru.
   - hapusKamar(int roomNumber): Metode untuk menghapus kamar berdasarkan nomor kamar.
